@@ -4,9 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="index.html"></script>
+    <script src="index.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="row w-25 p-1">
+            <div class="col">
+                <span class="d-block p-2">
+                    <label for="password">Hasło</label>
+                </span>
+                <span class="d-block p-2">
+                    <input class="form-control" type="password" id="password" onkeyup="checkPassword()">
+                </span>
+                <span class="d-block p-2">
+                    <label for="password2">Powtórz hasło</label>
+                </span>
+                <span class="d-block p-2">
+                    <input class="form-control" type="password" id="repeat-password" onkeyup="checkPassword()">
+                </span>
+            </div>
+        </div>
+        <div class="row">
+            <div id="message" class="col text-danger"></div>
+        </div>
+    </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
